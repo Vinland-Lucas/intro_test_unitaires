@@ -1,0 +1,15 @@
+{
+  "name": "intro_test_unitaires",
+  "version": "1.0.0",
+  "description": "## Q1. Selon-vous, qu’est-ce un test ? Pour moi, un test est un algorithme qui sert à vérifier si notre code s'exécute comme il faut.",
+  "main": "todolist.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}
