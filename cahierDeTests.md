@@ -78,12 +78,10 @@
 - instancier un tableau contenant au moins un élément
 
 **Configurations :** <br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
-- exécuter la fonction deleteAllTasks()
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask())
-- exécuter la fonction deleteAllTasks(pos, n)
+- exécuter la fonction deleteAllTasks(position, array.length)
 
 **Résultat attendu :** tous les éléments du tableau doivent être supprimés <br>
 
