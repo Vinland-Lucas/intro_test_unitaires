@@ -12,12 +12,12 @@
 
 **Conditions préalables :**<br>
 - instancier un tableau
-- avoir une fonction addTask() --> pas besoin d'écrire cette condition car si on écrit un test, c'est que cette fonction existe forcément.
+- avoir une fonction addTask(object, array) --> pas besoin d'écrire cette condition car si on écrit un test, c'est que cette fonction existe forcément.
 
 **Configurations :** <br>
 
 **Etapes de test :** <br>
-- exécuter la fonction addTask
+- exécuter la fonction addTask(object, array)
 - le tableau doit contenir la tâche/élément ajoutée
 
 **Résultat attendu :** le tableau doit contenir l'élément ajouté <br>
@@ -38,7 +38,7 @@
 **Configurations :** <br>
 
 **Etapes de test :** <br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
+- créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
 - exécuter la fonction deleteTask(index)
 
 **Résultat attendu :** le tableau ne doit plus contenir l'élément supprimé <br>
@@ -59,7 +59,7 @@
 **Configurations :** <br>
 
 **Etapes de test :** <br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
+- créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
 - exécuter la fonction modifyTask(index, label)
 
 **Résultat attendu :** l'élément sélectionné dans le tableau doit ête modifié <br>
@@ -80,7 +80,7 @@
 **Configurations :** <br>
 
 **Etapes de test :** <br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
+- créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
 - exécuter la fonction deleteAllTasks(position, array.length)
 
 **Résultat attendu :** tous les éléments du tableau doivent être supprimés <br>
@@ -101,7 +101,7 @@
 **Configurations :**
 
 **Etapes de test :**<br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
+- créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
 - exécuter la fonction isDone(index)
 
 **Résultat attendu :** Le statut "done" de l'élément est true <br>
@@ -123,7 +123,7 @@
 **Configurations :** <br> 
 
 **Etapes de test :** <br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
+- créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
 - exécuter la fonction isDone(index)
 - exécuter la fonction isIncomplete(index)
 
@@ -145,7 +145,7 @@
 **Configurations :** <br>
 
 **Etapes de test :** <br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
+- créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
 - exécuter la fonction markAllAsDone()
 
 **Résultat attendu :** le statut "done" de chaque élément de la todo-list est true <br>
@@ -167,7 +167,7 @@
 **Configurations :** <br>
 
 **Etapes de test :** <br>
-- créer un tableau et y ajouter au moins un élément (avec addTask())
+- créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
 - exécuter la fonction isDone(index) ou markAllAsDone()
 - exécuter la fonction markAllAsIncomplete()
 
@@ -189,7 +189,7 @@
 **Configurations :** <br>
 
 **Etapes de test :** <br>
-- créer un tableau et y ajouter au moins deux éléments (avec addTask())
+- créer un tableau et y ajouter au moins deux éléments (avec addTask(object, array))
 - exécuter la fonction moveTask(index1, index2)
 
 **Résultat attendu :** l'ordre de la todo-list est modifié <br>
