@@ -112,50 +112,86 @@
 
 **NOM :** isIncomplete <br>
 
-**ID :** <br>
+**ID :** 6<br>
 
-**Objectif :** modifie le statut "incomplete" à true d'un élément de la todo-list <br>
+**Objectif :** modifie le statut "done" à false d'un élément de la todo-list <br>
 
 **Références :** <br>
 
 **Conditions préalables :**<br>
 - instancier un tableau contenant au moins un élément
+- le statut "done" de l'élément doit être true
 
 **Configurations :** <br> 
 
-**Etapes de test :** <br> 
+**Etapes de test :** <br>
+- créer un tableau et y ajouter au moins un élément (avec addTask())
+- exécuter la fonction isDone(index)
+- exécuter la fonction isIncomplete(index)
 
 **Résultat attendu :** Le statut "done" de l'élément est false <br>
 
 ## SEPTIEME TEST :
 
-**NOM :** marklAllAsDone <br>
-**ID :** <br>
+**NOM :** markAllAsDone <br>
+
+**ID :** 7<br>
+
 **Objectif :** modifie le statut done à true de tous les éléments de la todo-list. <br>
+
 **Références :** <br> 
-**Conditions préalables :** il faut qu'il y ait au moins un élément dans la todo-list et que son statut "done" ne soit pas true <br>
+
+**Conditions préalables :**<br>
+- instancier un tableau contenant au moins un élément
+
 **Configurations :** <br>
+
 **Etapes de test :** <br>
+- créer un tableau et y ajouter au moins un élément (avec addTask())
+- exécuter la fonction markAllAsDone()
+
 **Résultat attendu :** le statut "done" de chaque élément de la todo-list est true <br>
 
 ## HUITIEME TEST :
 
 **NOM :** markAllAsIncomplete <br>
-**ID :** <br>
+
+**ID :** 8<br>
+
 **Objectif :** modifie le "statut" done à false de tous les éléments de la todo-list <br>
+
 **Références :** <br>
-**Conditions préalables :** il faut qu'il y ait au moins un élément dans la todo-list et que son statut "done" ne soit pas false <br>
+
+**Conditions préalables :**<br>
+- instancier un tableau contenant au moins un élément
+- le statut "done" d'au moins un élément doit être true
+
 **Configurations :** <br>
+
 **Etapes de test :** <br>
-**Résultat attendu :** le statut "done" de chaque élément de la todo-list est true <br>
+- créer un tableau et y ajouter au moins un élément (avec addTask())
+- exécuter la fonction isDone(index) ou markAllAsDone()
+- exécuter la fonction markAllAsIncomplete()
+
+**Résultat attendu :** le statut "done" de chaque élément de la todo-list est false <br>
 
 ## NEUVIEME TEST :
 
 **NOM :** moveTask <br>
-**ID :** <br>
-**Objectif :** permet à l'utilisateur de changer la place d'un élément de la todo-list selon son importance <br>
+
+**ID :** 9<br>
+
+**Objectif :** permet de changer la place d'un élément de la todo-list selon son importance <br>
+
 **Références :** <br>
-**Conditions préalables :** il faut qu'il y ait au moins un élément dans la todo-list <br>
+
+**Conditions préalables :**<br>
+- instancier un tableau contenant au moins deux éléments
+
 **Configurations :** <br>
+
 **Etapes de test :** <br>
+- créer un tableau et y ajouter au moins deux éléments (avec addTask())
+- exécuter la fonction moveTask(index1, index2)
+
 **Résultat attendu :** l'ordre de la todo-list est modifié <br>
