@@ -39,7 +39,7 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction deleteTask(index)
+- exécuter la fonction deleteTask(index, array)
 
 **Résultat attendu :** le tableau ne doit plus contenir l'élément supprimé <br>
 
@@ -60,7 +60,7 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction modifyTask(index, label)
+- exécuter la fonction modifyTask(index, label, array)
 
 **Résultat attendu :** l'élément sélectionné dans le tableau doit ête modifié <br>
 
