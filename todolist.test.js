@@ -42,3 +42,17 @@ test("delete a task", () => {
    expect(array).toEqual({ label: "Task 2", done: false });
 });
 
+// TROISIEME TEST : modifyTask
+test("modify a task", () => {
+    let array = [
+        { label: "Task 1", done: false },
+        {label: "Task 2", done: false }
+    ];
+
+    let indexToModify = 1;
+    let newTask = "Faire le ménage";
+    const result = modifyTask(indexToModify, newTask, array);
+
+    expect(result).toEqual( { label: newTask, done: false });
+    expect(array[1].label).toEqual(newTask);
+});
