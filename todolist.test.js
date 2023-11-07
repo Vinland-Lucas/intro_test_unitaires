@@ -71,3 +71,19 @@ test("delete all tasks", () => {
 
    expect(array).toHaveLength(0);
 });
+
+// CINQUIEME TEST : isDone
+test("done status to true", () => {
+    let array = [
+        { label: "Task 1", done: false }
+    ];
+
+    const index = 0;
+
+    const result = isDone(index, array);
+
+    expect(result).toEqual([{ label: "Task 1", done: true }]);
+    //expect(array).toContainEqual({ label: "Task 1", done: true })
+
+});
+
