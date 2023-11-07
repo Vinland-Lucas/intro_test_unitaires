@@ -10,8 +10,10 @@ import { addTask,
          markAllAsDone,
          markAllAsIncomplete,
          moveTask
-         } from ".todolist";
+         } from "./todolist";
 
+
+// PREMIER TEST : addTask
 test("add a task", () => {
     let array = [];
 
@@ -24,5 +26,19 @@ test("add a task", () => {
 
    expect(result).toHaveLength(1);
    expect(result[0]).toEqual(object);
+});
+
+// DEUXIEME TEST : deleteTask
+test("delete a task", () => {
+   let array = [
+       { label: "Task 1", done: false },
+       { label: "Task 2", done: false }
+   ];
+
+   let indexToDelete = 0;
+   const result = deleteTask(indexToDelete, array)
+
+   expect(result).toEqual({ label: "Task 1", done: false });
+   expect(array).toEqual({ label: "Task 2", done: false });
 });
 
