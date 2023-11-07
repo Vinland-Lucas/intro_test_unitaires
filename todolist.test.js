@@ -46,7 +46,7 @@ test("delete a task", () => {
 test("modify a task", () => {
     let array = [
         { label: "Task 1", done: false },
-        {label: "Task 2", done: false }
+        { label: "Task 2", done: false }
     ];
 
     let indexToModify = 1;
@@ -55,4 +55,19 @@ test("modify a task", () => {
 
     expect(result).toEqual( { label: newTask, done: false });
     expect(array[1].label).toEqual(newTask);
+});
+
+// QUATRIEME TEST : deleteAllTasks
+test("delete all tasks", () => {
+   let array = [
+       { label: "Task 1", done: false },
+       { label: "Task 2", done: false },
+       { label: "Task 3", done: false }
+   ];
+
+   const position = 0;
+
+   deleteAllTasks(position, array.length);
+
+   expect(array).toHaveLength(0);
 });
