@@ -23,3 +23,9 @@ export function deleteAllTasks(position, array) {
 
     return array;
 }
+
+export function isDone(index, array) {
+    array[index].done = true;
+
+    return array;
+}
