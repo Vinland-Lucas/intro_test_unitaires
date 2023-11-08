@@ -146,7 +146,7 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction markAllAsDone()
+- exécuter la fonction markAllAsDone(array)
 
 **Résultat attendu :** le statut "done" de chaque élément de la todo-list est true <br>
 
@@ -168,8 +168,8 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction isDone(index, array) ou markAllAsDone()
-- exécuter la fonction markAllAsIncomplete()
+- exécuter la fonction isDone(index, array) ou markAllAsDone(array)
+- exécuter la fonction markAllAsIncomplete(array)
 
 **Résultat attendu :** le statut "done" de chaque élément de la todo-list est false <br>
 
