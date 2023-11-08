@@ -127,7 +127,7 @@ test("done status to false", () => {
    const result = isIncomplete(index, array);
 
    expect(result).toEqual([{ label: "Task 1", done: false }]);
-   expect(array).toContainEqual([{ label: "Task 1", done: false }]);
+   expect(array).toContainEqual({ label: "Task 1", done: false });
 
 });
 
