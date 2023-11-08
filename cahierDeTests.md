@@ -81,7 +81,7 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction deleteAllTasks(position, array.length)
+- exécuter la fonction deleteAllTasks(position, array)
 
 **Résultat attendu :** tous les éléments du tableau doivent être supprimés <br>
 
