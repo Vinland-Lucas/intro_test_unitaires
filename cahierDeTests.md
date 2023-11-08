@@ -102,7 +102,7 @@
 
 **Etapes de test :**<br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction isDone(index)
+- exécuter la fonction isDone(index, array)
 
 **Résultat attendu :** Le statut "done" de l'élément est true <br>
 
@@ -124,8 +124,8 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction isDone(index)
-- exécuter la fonction isIncomplete(index)
+- exécuter la fonction isDone(index, array)
+- exécuter la fonction isIncomplete(index, array)
 
 **Résultat attendu :** Le statut "done" de l'élément est false <br>
 
@@ -168,7 +168,7 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins un élément (avec addTask(object, array))
-- exécuter la fonction isDone(index) ou markAllAsDone()
+- exécuter la fonction isDone(index, array) ou markAllAsDone()
 - exécuter la fonction markAllAsIncomplete()
 
 **Résultat attendu :** le statut "done" de chaque élément de la todo-list est false <br>
@@ -190,6 +190,6 @@
 
 **Etapes de test :** <br>
 - créer un tableau et y ajouter au moins deux éléments (avec addTask(object, array))
-- exécuter la fonction moveTask(index1, index2)
+- exécuter la fonction moveTask(index1, index2, array)
 
 **Résultat attendu :** l'ordre de la todo-list est modifié <br>
