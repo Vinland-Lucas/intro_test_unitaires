@@ -165,9 +165,9 @@ test("done status to false for all elements in the todolist", () => {
                                         { label: "Task 2", done: false },
                                         { label: "Task 3", done: false } ]);
 
-    expect(array).toContainEqual([ { label: "Task 1", done: false },
+    expect(array).toContainEqual({ label: "Task 1", done: false },
                                         { label: "Task 2", done: false },
-                                        { label: "Task 3", done: false } ]);
+                                        { label: "Task 3", done: false } );
 
 });
 
