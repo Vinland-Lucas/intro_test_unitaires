@@ -11,3 +11,9 @@ export function deleteTask(index, array) {
 
     return array;
 }
+
+export function modifyTask(index, newLabel, array) {
+    array[index].label = newLabel;
+
+    return array
+}
