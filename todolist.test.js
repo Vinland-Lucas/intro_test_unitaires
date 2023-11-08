@@ -66,8 +66,8 @@ test("delete a task", () => {
    let indexToDelete = 0;
    const result = deleteTask(indexToDelete, array)
 
-   expect(result).toEqual({ label: "Task 1", done: false });
-   expect(array).toEqual({ label: "Task 2", done: false });
+   expect(result).toEqual([ { label: "Task 2", done: false } ]);
+   expect(array).toEqual([ { label: "Task 2", done: false } ]);
 });
 
 // TROISIEME TEST : modifyTask
