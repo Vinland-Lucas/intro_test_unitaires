@@ -6,4 +6,8 @@ export function addTask(object, array) {
     return array;
 }
 
+export function deleteTask(index, array) {
+    array.splice(index, 1);
 
+    return array;
+}
