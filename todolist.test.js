@@ -188,8 +188,8 @@ test("move the order of a task", () => {
                                     { label: "Task 3", done: true },
                                     { label: "Task 2", done: false } ]);
 
-   expect(array).toContainEqual([ { label: "Task 1", done: true },
+   expect(array).toContainEqual( { label: "Task 1", done: true },
                                         { label: "Task 3", done: true },
-                                        { label: "Task 2", done: false } ]);
+                                        { label: "Task 2", done: false } );
 
 });
