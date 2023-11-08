@@ -43,3 +43,11 @@ export function markAllAsDone(array) {
 
     return array;
 }
+
+export function markAllAsIncomplete(array) {
+    array.forEach(item => {
+        item.done = false
+    });
+
+    return array;
+}
