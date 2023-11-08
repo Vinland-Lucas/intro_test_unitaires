@@ -142,3 +142,26 @@ test("done status to false for all elements in the todolist", () => {
                                         { label: "Task 3", done: false } ]);
 
 });
+
+// NEUVIEME TEST : moveTask
+test("move the order of a task", () => {
+   let array = [
+       { label: "Task 1", done: true },
+       { label: "Task 2", done: false },
+       { label: "Task 3", done: true }
+   ];
+
+  // const firstTaskToMove = 2;
+  // const secondeTaskToMove = 1;
+
+   const result = moveTask(2, 1, array);
+
+   expect(result).toEqual([ { label: "Task 1", done: true },
+                                    { label: "Task 3", done: true },
+                                    { label: "Task 2", done: false } ]);
+
+   expect(array).toContainEqual([ { label: "Task 1", done: true },
+                                        { label: "Task 3", done: true },
+                                        { label: "Task 2", done: false } ]);
+
+});
