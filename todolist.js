@@ -51,3 +51,11 @@ export function markAllAsIncomplete(array) {
 
     return array;
 }
+
+export function moveTask(index1, index2, array) {
+    const temporary = array[index1];
+    array[index1] = array[index2];
+    array[index2] = temporary;
+
+    return array;
+}
