@@ -17,3 +17,9 @@ export function modifyTask(index, newLabel, array) {
 
     return array
 }
+
+export function deleteAllTasks(position, array) {
+    array.splice(position, array.length);
+
+    return array;
+}
