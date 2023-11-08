@@ -1,6 +1,6 @@
 // All the ToDoList tests down here
 
-import {expect, test} from "vitest";
+import {expect, describe, it, test} from "vitest";
 import { addTask,
          deleteTask,
          modifyTask,
@@ -27,6 +27,34 @@ test("add a task", () => {
    expect(result).toHaveLength(1);
    expect(result[0]).toEqual(object);
 });
+
+// PREMIER TEST BIS : addTask
+/*describe('addTask()', () => {
+    const taskArray = [];
+    const mockLabel = "mockLabel";
+    let mockTask = new Object();
+    mockTask.label = mockLabel;
+    mockTask.done = false;
+
+    let result = addTask(mockTask, taskArray);
+    it('ADT01', () => {
+        expect(result).toHaveLength(1);
+        expect(result[0]).toEqual(mockTask);
+    })
+
+    const invalidLabel = 123
+    it('ADT02', () => {
+        const errorCallback = () => addTask(invalidLabel, taskArray)
+        expect(errorCallback).toThrow(Error)
+    })
+
+    it('ADT03', () => {
+        const emptyTask = {};
+        const errorCallback = () => addTask(taskArray, emptyTask);
+        expect(errorCallback).toThrow(Error)
+    })
+})*/
+
 
 // DEUXIEME TEST : deleteTask
 test("delete a task", () => {
