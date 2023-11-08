@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1699457134155" clover="3.2.0">
-  <project timestamp="1699457134155" name="All files">
+<coverage generated="1699458442967" clover="3.2.0">
+  <project timestamp="1699458442967" name="All files">
     <metrics statements="61" coveredstatements="61" conditionals="11" coveredconditionals="11" methods="9" coveredmethods="9" elements="81" coveredelements="81" complexity="0" loc="61" ncloc="61" packages="1" files="1" classes="1"/>
     <file name="todolist.js" path="/home/user/Documents/CAMPUS_NUMERIQUE_DEV_LOGICIEL_2024/COURS_THEORIE/TESTS_UNITAIRES/intro_test_unitaires/todolist.js">
       <metrics statements="61" coveredstatements="61" conditionals="11" coveredconditionals="11" methods="9" coveredmethods="9"/>
