@@ -102,3 +102,23 @@ test("done status to false", () => {
    expect(array).toContainEqual([{ label: "Task 1", done: false }]);
 
 });
+
+// SEPTIEME TEST : markAllAsDone
+test("done status to true for all elements in the todolist", () => {
+   let array = [
+       { label: "Task 1", done: false },
+       { label: "Task 2", done: false },
+       { label: "Task 3", done: false }
+   ];
+
+   const result = markAllAsDone();
+
+   expect(result).toEqual([ { label: "Task 1", done: true },
+                                    { label: "Task 2", done: true },
+                                    { label: "Task 3", done: true }]);
+
+   expect(array).toContainEqual([ { label: "Task 1", done: true },
+                                        { label: "Task 2", done: true },
+                                        { label: "Task 3", done: true } ]);
+
+});
