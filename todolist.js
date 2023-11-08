@@ -29,3 +29,9 @@ export function isDone(index, array) {
 
     return array;
 }
+
+export function isIncomplete(index, array) {
+    array[index].done = false;
+
+    return array;
+}
