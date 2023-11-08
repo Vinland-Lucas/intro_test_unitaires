@@ -35,3 +35,11 @@ export function isIncomplete(index, array) {
 
     return array;
 }
+
+export function markAllAsDone(array) {
+    array.forEach(item => {
+        item.done = true
+    });
+
+    return array;
+}
