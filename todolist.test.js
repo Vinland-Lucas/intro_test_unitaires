@@ -53,7 +53,8 @@ test("modify a task", () => {
     let newTask = "Faire le ménage";
     const result = modifyTask(indexToModify, newTask, array);
 
-    expect(result).toEqual( { label: newTask, done: false });
+    expect(result).toEqual( [{ label: "Task 1", done: false },
+                                        { label: newTask, done: false }]);
     expect(array[1].label).toEqual(newTask);
 });
 
